@@ -1,8 +1,8 @@
 # real-time chat based on websocket and redis message queue
 
-* [**How To Use**](https://github.com/yinchuandong/chat_websocket#How-To-Use)
-* [**About index.js**](https://github.com/yinchuandong/chat_websocket#About-indexjs)
-* [**About Message Queue**](https://github.com/yinchuandong/chat_websocket#About-Message-Queue)
+* [**How To Use**](https://github.com/yinchuandong/chat_websocket#how-to-use)
+* [**About index.js**](https://github.com/yinchuandong/chat_websocket#about-indexjs)
+* [**About Message Queue**](https://github.com/yinchuandong/chat_websocket#about-message-queue)
 
 ![chat server](https://github.com/yinchuandong/chat_websocket/blob/master/screenshot/chat_server.png)
 
