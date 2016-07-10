@@ -1,6 +1,12 @@
 # real-time chat based on websocket and redis message queue
 
-### how to use
+* [**How To Use**](https://github.com/yinchuandong/chat_websocket#How-To-Use)
+* [**About index.js**](https://github.com/yinchuandong/chat_websocket#About-indexjs)
+* [**About Message Queue**](https://github.com/yinchuandong/chat_websocket#About-Message-Queue)
+
+![chat server](https://github.com/yinchuandong/chat_websocket/blob/master/screenshot/chat_server.png)
+
+### How To Use
    1. npm install --save
    2. supervisor index.js ***create a push server, it also can be a cluster if it is run on different machine***
    3. open http://127.0.0.1:3000 in your brower in multiple tabs.
@@ -8,7 +14,7 @@
    5. supervisor server_pushmsg.js  ***As a producer who pushes multiple message***
 
 
-### about index.js
+### About index.js
    index.js is running on a push server, to which all clients are connecting,
 
 ##### 1. subscript the channel of redis because redis is used to communicate between message queue and sever
@@ -61,7 +67,7 @@ io.on('connection', function(socket){
 });
 ```
 
-### about message queue
+### About Message Queue
 ##### get messages and dispatch them to specific server. It can be distributed because each channel represent for a server. Alternatively, you can use socket to interact if you like in case of the scalability of distributed redis.
 ```javascript
 var publiser = redis.createClient();
